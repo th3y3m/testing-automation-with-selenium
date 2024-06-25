@@ -34,6 +34,8 @@ public class Main {
 
     //TOOL ở mục 1 chính là xài 3 thằng này
 
+
+    //Google
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
@@ -47,23 +49,22 @@ public class Main {
         WebElement submit = myBrowser.findElement(By.name("btnLogin"));
         submit.submit();
 
-//        WebElement create = myBrowser.findElement(By.name("create"));
-
-        Thread.sleep(100000);
+        Thread.sleep(10000);
         myBrowser.quit();
 
     }
+
+    //Edge
 //    public static void main(String[] args) throws InterruptedException {
-//        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-////        System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
+//        System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
 //
-////        EdgeOptions options = new EdgeOptions();
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--incognito");
+//        EdgeOptions options = new EdgeOptions();
+//
+//        options.addArguments("--inprivate");
 //        options.addArguments("--lang=ja-JP");
 //
-//        WebDriver myBrowser = new ChromeDriver(options);
-////        WebDriver myBrowser = new EdgeDriver(options);
+//
+//        WebDriver myBrowser = new EdgeDriver(options);
 //        //myBrowser là biến object trỏ tới trình duyệt - object rất bự
 //        //ta muốn trình duyệt làm gì, ta gì myBrowser
 //        //Kĩ thuật điều khiển trình duyệt = code ! Giúp dân QC tránh nhàm chán
